@@ -12,11 +12,11 @@ Biblioteca.prototype.eliminarLibro = function(libro) {
 }
 
 Biblioteca.prototype.buscarLibro = function(nombre) {
-	var resultado= null;
+	var resultado = null;
 	for (var i=0; i<this.libros.length; i++){
-		if (libros[i].nombre === nombre){
-			resultado = libros[i];
-			breack;
+		if (this.libros[i].nombre === nombre){
+			resultado = this.libros[i];
+			break;
 		}
 	}
 	return resultado;
