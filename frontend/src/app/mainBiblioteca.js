@@ -13,13 +13,17 @@ Biblioteca.prototype.eliminarLibro = function(libro) {
 
 Biblioteca.prototype.buscarLibro = function(nombre) {
 	resultado= null;
-	for (i:0; this.libros.length; i++){
+	for (i=0; i<libros.length; i++){
 		if (libros[i].nombre === nombre){
 			resultado = libros[i];
+			breack;
 		}
 	}
+	return resultado;
 }
 
-Biblioteca.prototype.verLibros = function() {
-	//codigo
+Biblioteca.prototype.verLibros = function(nombre) {
+	if (nombre === buscarLibro().nombre){
+			
+	}
 }
