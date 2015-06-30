@@ -13,7 +13,7 @@ Biblioteca.prototype.eliminarLibro = function(libro) {
 
 Biblioteca.prototype.buscarLibro = function(nombre) {
 	resultado= null;
-	for (i=0; i<libros.length; i++){
+	for (i=0; i<this.libros.length; i++){
 		if (libros[i].nombre === nombre){
 			resultado = libros[i];
 			breack;
