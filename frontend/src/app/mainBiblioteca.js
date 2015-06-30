@@ -12,8 +12,8 @@ Biblioteca.prototype.eliminarLibro = function(libro) {
 }
 
 Biblioteca.prototype.buscarLibro = function(nombre) {
-	resultado= null;
-	for (i=0; i<this.libros.length; i++){
+	var resultado= null;
+	for (var i=0; i<this.libros.length; i++){
 		if (libros[i].nombre === nombre){
 			resultado = libros[i];
 			breack;
