@@ -13,14 +13,21 @@ Biblioteca.prototype.agregarLibro = function(libro) {
 	this.libros.push(libro);
 }
 
-Biblioteca.prototype.eliminarLibro = function(libro) {
-	this.libros.remove(libro);
+Biblioteca.prototype.eliminarLibro = function(titulo) {
+	var libro = this.buscarLibro(titulo);
+	if (libro === null) {
+		return false;
+	}
+	var index = this.libros.indexOf(libro);
+	this.libros.splice(index);
+	
+	return true;
 }
 
 Biblioteca.prototype.buscarLibro = function(nombre) {
 	var resultado = null;
 	for (var i=0; i<this.libros.length; i++){
-		if (this.libros[i].nombre === nombre){
+		if (this.libros[i].titulo === nombre){
 			resultado = this.libros[i];
 			break;
 		}
@@ -28,8 +35,4 @@ Biblioteca.prototype.buscarLibro = function(nombre) {
 	return resultado;
 }
 
-Biblioteca.prototype.verLibros = function(nombre) {
-	if (nombre === buscarLibro().nombre){
-			
-	}
-}
+

@@ -7,10 +7,14 @@
 
     <script type="text/javascript">
         var libro1 = new Libro("Las venas abiertas de america latina","Eduardo Galeano","9788432311451");
-
+		var libro2 = new Libro("la", "kakkaa", "123332");
+		
         var biblioteca = new Biblioteca("Lucia Biblioteca", []);
 
         biblioteca.agregarLibro(libro1);
+        biblioteca.agregarLibro(libro2);
+        
+        var l = biblioteca.buscarLibro("la");
         
     </script>
 </html>
