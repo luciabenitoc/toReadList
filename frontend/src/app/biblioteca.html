@@ -5,23 +5,13 @@
         <script type="text/javascript" src="./mainBiblioteca.js"></script>
     </head>
 
-    <body>
-        <p title="Biblioteca">
-                Biblioteca por y para mi!
-        </p>
-        <p> Deberia funcionar diviiiiinoo </p>
-        <img id ="Img" src="./imagen.jpg" alt="imagen1" width="104" height="142">
-
-        <table border= "1">
+    <script type="text/javascript">
+        var libro1 = new Libro("Las venas abiertas de america latina","Eduardo Galeano","9788432311451");
 
 
 
-            <tr>
-                <td>
-                    <input type="text"/>
-                    <button> Buscar </button>
-                </td>
-            </tr>
-        </table>
-    </body>
+        var biblioteca = new Biblioteca("Lucia");
+
+        biblioteca.agregarLibro(libro1);
+    </script>
 </html>
