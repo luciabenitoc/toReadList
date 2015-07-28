@@ -1,6 +1,7 @@
-function Libro(titulo, autor, ISBN){
+function Libro(titulo, autor, editorial, ISBN){
 	this.titulo = titulo;
 	this.autor = autor;
+	this.editorial = editorial;
 	this.ISBN = ISBN;
 }
 
