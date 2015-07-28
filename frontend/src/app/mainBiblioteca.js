@@ -1,8 +1,9 @@
-function Libro(titulo, autor, editorial, ISBN){
+function Libro(titulo, autor, editorial, ISBN, estado){
 	this.titulo = titulo;
 	this.autor = autor;
 	this.editorial = editorial;
 	this.ISBN = ISBN;
+	this.estado = estado;
 }
 
 function Biblioteca(nombre, libros) {
