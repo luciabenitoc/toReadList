@@ -5,18 +5,20 @@
         <script type="text/javascript" src="./mainBiblioteca.js"></script>
     </head>
 
-    <script type="text/javascript">
-        var libro1 = new Libro("Las venas abiertas de america latina","Eduardo Galeano","Siglo XXI","9788432311451","En curso");
-	var libro2 = new Libro("la", "kakkaa","lili","123332");
-	var libro3 = new Libro("EL amante japonés","Isabel Allende","Sudamericana","9789500752442", "Terminado");
-		
-        var biblioteca = new Biblioteca("Lucia Biblioteca", []);
-
-        biblioteca.agregarLibro(libro1);
-        biblioteca.agregarLibro(libro2);
-        biblioteca.agregarLibro(libro3);
-        
-        var l = biblioteca.buscarLibro("la");
-        
-    </script>
+    <body>
+	  <script type="text/javascript">
+	        var libro1 = new Libro("Las venas abiertas de america latina","Eduardo Galeano","Siglo XXI","9788432311451","En curso");
+		var libro2 = new Libro("la", "kakkaa","lili","123332");
+		var libro3 = new Libro("EL amante japonés","Isabel Allende","Sudamericana","9789500752442", "Terminado");
+			
+	        var biblioteca = new Biblioteca("Lucia Biblioteca", []);
+	
+	        biblioteca.agregarLibro(libro1);
+	        biblioteca.agregarLibro(libro2);
+	        biblioteca.agregarLibro(libro3);
+	        
+	        var l = biblioteca.buscarLibro("la");
+	        
+	  </script>
+    </body>
 </html>
