@@ -26,13 +26,13 @@ Biblioteca.prototype.eliminarLibro = function(titulo) {
 	return true;
 }
 
-Biblioteca.prototype.buscarLibro = function(nombre) {
+Biblioteca.prototype.buscarLibro = function(textSearch) {
 	var resultado = null;
 	for (var i=0; i<this.libros.length; i++){
-		if (this.libros[i].titulo === nombre){
+		/*if (this.libros[i].titulo === nombre){
 			resultado = this.libros[i];
 			break;
-		}
+		}*/
 	}
 	return resultado;
 }
